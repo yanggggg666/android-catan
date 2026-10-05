@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">Android Catan</string>
+
+    <string name="message_text">Alert! This is an important message.</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_game_main">Shall We Play A Game?</string>
+    <string name="save_config">Save As Default Configuration</string>
+    <string name="begin_game">Begin Game</string>
+    <string name="name_label">Name:</string>
+    <string name="server_ip_code">Server\'s IP Code:</string>
+    <string name="remove_player">Remove Player</string>
+    <string name="add_player">Add Player</string>
+    <string name="player_name">Player Name</string>
+    <string name="player_type">Player Type</string>
+    <string name="guest">Guest</string>
+    <string name="save_config_as_default">Save this Configuration as the Default</string><string name="start_the_game">Start Game!</string>
+    <string name="robber_discard_menu_header">Select Half Your Cards to Discard</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_more_resources">You need to select more resources</string>
+    <string name="score">Score</string>
+    <string name="vp00">VP: 00</string>
+    <string name="playerTurn">Players Turn</string>
+    <string name="value_00">00</string>
+    <string name="buildDevelopment">Build Development</string>
+    <string name="selectIntersections">Select two intersections:</string>
+    <string name="resourceReceive">Select a resource to receive:</string>
+    <string name="resourceGive">Select a resource to give:</string>
+    <string name="dice">Dice</string>
+    <string name="buildingCosts">Building Costs</string>
+    <string name="longestRoad">Longest Road</string>
+    <string name="largestArmy">Largest Army</string>
+
+    <string name="select_intersection_id">Select an intersectionA:</string>
+    <string name="hint_00">00</string>
+    <string name="minus">minus</string>
+    <string name="add">add</string>
+
+    <string name="dialog_continue_label">Continue Playing Game</string>
+    <string name="dialog_quit_label">Quit</string>
+    <string name="dialog_quit_question">Do you really want to quit?</string>
+    <string name="local_tab">Local Game</string>
+    <string name="remote_tab">Remote Game</string>
+
+    <string name="heading_build">Build</string>
+    <string name="road">Road</string>
+    <string name="settlement">Settlement</string>
+    <string name="city">City</string>
+
+    <string name="heading_playerName">PlayerName</string>
+    <string name="victoryPoints">Victory Points</string>
+    <string name="roll">Roll</string>
+    <string name="endTurn">End Turn</string>
+
+    <string name="heading_actions">Actions</string>
+    <string name="heading_trade">Trade</string>
+    <string name="trade">Trade</string>
+
+    <string name="heading_resources">Resources</string>
+    <string name="ore">Ore</string>
+    <string name="grain">Grain</string>
+    <string name="lumber">Lumber</string>
+    <string name="wool">Wool</string>
+    <string name="brick">Brick</string>
+
+    <string name="heading_game">Game</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="menu">Menu</string>
+    <string name="heading_turn">Turn</string>
+    <string name="Player1">Player 1</string>
+    <string name="Player2">Player 2</string>
+    <string name="Player3">Player 3</string>
+    <string name="Player4">Player 4</string>
+
+    <string name="Player1_Score">0</string>
+    <string name="Player2_Score">0</string>
+    <string name="Player3_Score">0</string>
+    <string name="Player4_Score">0</string>
+
+    <string name="Trading_Menu">Trading Menu</string>
+    <string name="you_Want">You Want:</string>
+    <string name="you_Give">You Give:</string>
+
+    <string name="sheep_you_give_amount">0</string>
+    <string name="sheep_you_want_amount">2</string>
+    <string name="wood_you_give_amount">1</string>
+    <string name="wood_you_want_amount">2</string>
+    <string name="ore_you_give_amount">1</string>
+    <string name="ore_you_want_amount">1</string>
+    <string name="grain_you_give_amount">0</string>
+    <string name="grain_you_want_amount">0</string>
+    <string name="brick_you_give_amount">1</string>
+    <string name="brick_you_want_amount">0</string>
+
+    <string name="Use_Button">Use Card</string>
+
+    <string name="development_Card_Info">Development Card Info</string>
+    <string name="development_Card_Name">Development Card Name</string>
+    <string name="development_Card_Spinner">Development Card Selection</string>
+
+    <string name="value_lumber">0</string>
+    <string name="value_wool">0</string>
+    <string name="value_brick">0</string>
+    <string name="value_grain">0</string>
+    <string name="value_ore">0</string>
+
+    <string name="confirmString">Would you like to build this here?</string>
+
+    <string name="knight_name">Knight</string>
+    <string name="road_building_name">Road Building</string>
+    <string name="year_of_plenty_name">Year of Plenty</string>
+    <string name="monopoly_name">Monopoly</string>
+    <string name="victory_point_name">Victory Point Card</string>
+
+    <string name="knight_info">Lets the player move the robber</string>
+    <string name="road_building_info">Player can place 2 roads as if they just built them</string>
+    <string name="year_of_plenty_info">The player can draw 2 resource cards of their choice from the bank</string>
+    <string name="monopoly_info">Player can claim all resource cards of a specific declared type</string>
+    <string name="victory_point_info">1 additional Victory Point is added to the owners total and doesn\'t need to be played to win</string>
+    <!--resources-->
+
+    <string name="developmentCards">Development</string>
+    <string name="need_2_ints_for_road">Select two intersections to build a road.</string>
+    <string name="build_a_road">Built a road.</string>
+    <string name="invalid_road_placement">Invalid road placement.</string>
+    <string name="one_int_for_set">Select one intersection to build a settlement.</string>
+    <string name="built_settlement">Built a settlement.</string>
+    <string name="invalid_set_loc">Invalid settlement location.</string>
+    <string name="select_one_int_for_city">Select one intersection to build a city.</string>
+    <string name="built_city">Built a city.</string>
+    <string name="not_enough_for_dev">You do not have enough resources to buy a development.</string>
+    <string name="not_enough_for_road">Not enough resources to build a road.</string>
+    <string name="robber_phase">Robber phase.</string>
+    <string name="setup_phase">Setup phase.</string>
+    <string name="setup_phase_complete">Setup turn complete. Please end your turn.</string>
+    <string name="not_enough_for_city">Not enough resources to build a city.</string>
+    <string name="no_port_access">Selected intersection does not have port access.</string>
+    <string name="select_one_intersection">Please select only one intersection.</string>
+    <string name="select_int_w_bldg_robber">Please select another player\'s building.</string>
+    <string name="select_int_not_owned_by_you">Please select an intersection not owned by you.</string>
+    <string name="select_adjacent_to_robber">Please select an intersection adjacent to the Robber tile.</string>
+    <string name="invalid_tile">Not a valid tile!</string>
+    <string name="zero">00</string>
+    <string name="dont_have_card">You don\'t have that card!</string>
+    <string name="you_built_a_dev">Development Card built.</string>
+    <string name="not_enough_for_dev_card">Not enough resources to build a development.</string>
+    <string name="invalid_settlement_loc">Invalid settlement location.</string>
+    <string name="roll_the_dice">Please roll the dice.</string>
+    <string name="action_phase">Action phase.</string>
+    <string name="choose_robber_tile">Please choose a tile to place the Robber on.</string>
+    <string name="road_built">Successfully built a road!</string>
+    <string name="robber_moved">Robber moved.</string>
+    <string name="new_hex">Robber must be moved to a new hexagon.</string>
+    <string name="hex_for_robber">Select an intersection to move the robber.</string>
+    <string name="opp_bldg">Robber must be moved next to an opponents building.</string>
+    <string name="not_enough_for_trade">Not enough resources to make trade.</string>
+    <string name="traded_with_port">Traded with port.</string>
+    <string name="rec_res_not_sel">Receiving resource not selected!</string>
+    <string name="give_res_not_sel">Giving resource not selected!</string>
+    <string name="unique_res_trading">Must receive a different resource than you give.</string>
+    <string name="pick_resource">Select a resource!</string>
+    <string name="build_road_and_set">Must build a road and a settlement!</string>
+    <string name="cannot_end_turn_before_rolling">Cannot end turn before rolling!</string>
+    <string name="less_than_2_res">Please select less than 2 intersections.</string>
+    <string name="invalid_city_loc">Invalid city location: select a settlement to upgrade into a city.</string>
+    <string name="select_half">Please select half of your resources to discard.</string>
+    <string name="move_robber_to_hex">Please tap a tile to move the Robber to (Must be adjacent to enemy building).</string>
+    <string name="robber_select_intersection_tosteal">Tap an intersection that has an enemy settlement/city on it to steal from that player.</string>
+    <string name="waiting_for_discard">Waiting for other players to finish discarding...</string>
+    <string name="cpu_move_robber_to_hex">The current player is moving the robber.</string>
+    <string name="cpu_robber_steal_phase">The current player is choosing who to steal from.</string>
+    <string name="select_n_cards_to_discard">Select %d cards to discard.</string>
+    <string name="port_access">Please select a building that has access to a port.</string>
+    <string name="no_resources">Player has no resources! Sorry!</string>
+    <string-array name="dev_Card">
+        <item>Knights</item>
+        <item>Victory Points</item>
+        <item>Year of Plenty</item>
+        <item>Monopoly</item>
+        <item>Road Building</item>
+    </string-array>
+</resources>
