@@ -1741,7 +1741,7 @@ public class CatanHumanPlayer extends GameHumanPlayer implements OnClickListener
          */
 if(newGame) {
         menuMusic = MediaPlayer.create(myActivity .getApplicationContext(),R.raw.settlers_of_catan_official_theme_song);
-        generalMusic = MediaPlayer.create(myActivity.getApplicationContext(), R.raw.the_score_of_catan_full_song);
+        generalMusic = MediaPlayer.create(myActivity.getApplicationContext(), R.raw.catan_the_score_soundtrack);
         generalMusic.setLooping(true);
         generalMusic.setVolume(1, 1);
         generalMusic.start();newGame = false;
