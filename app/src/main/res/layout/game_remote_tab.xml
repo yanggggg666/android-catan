@@ -1,4 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/remoteTabLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -26,7 +26,7 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="玩家类型"
+                android:text="Player Type"
                 android:textStyle="bold|italic" />
 
         </TableRow>
@@ -58,12 +58,6 @@
         android:text="@string/server_ip_code"
         android:textStyle="bold|italic" />
 
-    <TextView
-        android:id="@+id/localIPView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="本机IP码："/>
-
     <EditText
         android:id="@+id/remoteIPCodeEditText"
         android:layout_width="wrap_content"
@@ -75,4 +69,4 @@
         <requestFocus />
     </EditText>
 
-</ScrollView>
+</LinearLayout>

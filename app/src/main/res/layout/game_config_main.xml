@@ -41,7 +41,7 @@
             android:layout_marginLeft="193dp"
             android:layout_toRightOf="@+id/saveConfigButton"
             android:onClick="doFinish"
-            android:text="返回" />
+            android:text="Back" />
 
     </RelativeLayout>
 

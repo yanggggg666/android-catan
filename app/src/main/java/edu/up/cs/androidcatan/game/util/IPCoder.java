@@ -35,10 +35,7 @@ public class IPCoder {
 						.getInetAddresses(); enumIpAddr.hasMoreElements();) {
 					InetAddress inetAddress = enumIpAddr.nextElement();
 					if (!inetAddress.isLoopbackAddress() && !inetAddress.isLinkLocalAddress()) {
-						String ip = inetAddress.getHostAddress();
-						if (!ip.contains(":")) {
-							return ip;
-						}
+						return inetAddress.getHostAddress().toString();
 					}
 				}
 			}

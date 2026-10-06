@@ -140,7 +140,7 @@ public class GameConfig {
 		availTypes.toArray(availArray);
 		
 		// add the network player
-		availArray[arrayLength-1] = new GamePlayerType("网络玩家") {
+		availArray[arrayLength-1] = new GamePlayerType("Network Player") {
 			public GamePlayer createPlayer(String name) {
 				int portNum = getPortNum();
 				return new ProxyPlayer(portNum);
