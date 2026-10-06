@@ -8,14 +8,14 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No GUI player was created on this device."
+        android:text="本设备未创建图形界面玩家。"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The game is in progress, but play is not visible."
+        android:text="游戏正在进行，但界面不可见。"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>

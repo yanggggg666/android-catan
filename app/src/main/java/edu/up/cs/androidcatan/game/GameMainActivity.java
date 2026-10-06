@@ -408,6 +408,10 @@ View.OnClickListener {
 	}// initTableRows
 
 	protected void initRemoteWidgets() {
+		// show local device IP code in the remote tab
+		TextView localIPView = findViewById(R.id.localIPView);
+		localIPView.setText("本机IP码：" + IPCoder.getLocalIpAddress());
+
 		//Set the remote name
 		EditText remoteNameEditText = findViewById(R.id.remoteNameEditText);
 		remoteNameEditText.setText(config.getRemoteName());
@@ -648,6 +652,10 @@ View.OnClickListener {
 			//add to the config
 			result.addPlayer(name, selIndex);
 		}//for
+
+		// show local device IP code in the remote tab
+		TextView localIPView = findViewById(R.id.localIPView);
+		localIPView.setText("本机IP码：" + IPCoder.getLocalIpAddress());
 
 		//Set the remote name
 		EditText remoteNameEditText = findViewById(R.id.remoteNameEditText);

@@ -28,17 +28,17 @@ public class MainActivity extends GameMainActivity {
         ArrayList<GamePlayerType> playerTypes = new ArrayList<GamePlayerType>();
 
         // Catan has three player types:  human, smart cpu, dumb cpu
-        playerTypes.add(new GamePlayerType("Local Human Player") {
+        playerTypes.add(new GamePlayerType("本地人类玩家") {
             public GamePlayer createPlayer(String name) {
                 return new CatanHumanPlayer(name);
             }
         });
-        playerTypes.add(new GamePlayerType("Dumb Computer") {
+        playerTypes.add(new GamePlayerType("笨笨电脑") {
             public GamePlayer createPlayer(String name) {
                 return new CatanDumbComputerPlayer(name);
             }
         });
-        playerTypes.add(new GamePlayerType("Smart Computer") {
+        playerTypes.add(new GamePlayerType("聪明电脑") {
             public GamePlayer createPlayer(String name) {
                 return new CatanSmartComputerPlayer(name);
             }
