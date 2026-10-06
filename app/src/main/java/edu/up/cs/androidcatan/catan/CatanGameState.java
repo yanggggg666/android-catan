@@ -42,7 +42,8 @@ public class CatanGameState extends GameState {
     private int playerStealingFrom = 0; // playerNum of who is getting a resource taken during Robber Steal Phase
 
     //Setup phase variables
-    static final int setupPhaseTurnOrder[] = {0, 1, 2, 3, 3, 2, 1, 0};
+    private int setupPhaseTurnOrder[];
+    private int numPlayers;
     private int setupPhaseTurnCounter;
 
     // robber
@@ -59,6 +60,12 @@ public class CatanGameState extends GameState {
      * constructor for CatanGameState
      */
     public CatanGameState() {
+        this(4);
+    }
+
+    public CatanGameState(int numPlayers) {
+        if (numPlayers < 1) numPlayers = 1;
+        this.numPlayers = numPlayers;
         this.dice = new Dice();
 
         board = new Board();
@@ -66,12 +73,22 @@ public class CatanGameState extends GameState {
         currentPlayerId = 0;
         this.currentDiceSum = 3;
         setupPhaseTurnCounter = 0;
+        robberPlayerListHasDiscarded = new boolean[numPlayers];
 
         // add players to player list
-        this.playerList.add(new Player(0));
-        this.playerList.add(new Player(1));
-        this.playerList.add(new Player(2));
-        this.playerList.add(new Player(3));
+        this.playerList.clear();
+        for (int i = 0; i < numPlayers; i++) {
+            this.playerList.add(new Player(i));
+        }
+
+        // setup phase turn order: forward, then reverse
+        this.setupPhaseTurnOrder = new int[numPlayers * 2];
+        for (int i = 0; i < numPlayers; i++) {
+            this.setupPhaseTurnOrder[i] = i;
+        }
+        for (int i = 0; i < numPlayers; i++) {
+            this.setupPhaseTurnOrder[numPlayers + i] = numPlayers - 1 - i;
+        }
 
         Log.i(TAG, board.toString());
     } // end CatanGameState constructor
@@ -98,6 +115,10 @@ public class CatanGameState extends GameState {
         this.developmentCards.addAll(cgs.getDevelopmentCards());
         this.currentPlayerId = cgs.currentPlayerId;
         this.setupPhaseTurnCounter = cgs.setupPhaseTurnCounter;
+        this.numPlayers = cgs.numPlayers;
+        if (cgs.setupPhaseTurnOrder != null) {
+            this.setupPhaseTurnOrder = Arrays.copyOf(cgs.setupPhaseTurnOrder, cgs.setupPhaseTurnOrder.length);
+        }
         this.isActionPhase = cgs.isActionPhase;
         this.playerStealingFrom = cgs.playerStealingFrom;
         System.arraycopy(cgs.robberPlayerListHasDiscarded, 0, this.robberPlayerListHasDiscarded, 0, cgs.robberPlayerListHasDiscarded.length);
@@ -622,6 +643,14 @@ public class CatanGameState extends GameState {
 
     public int getSetupPhaseTurnCounter() {
         return setupPhaseTurnCounter;
+    }
+
+    public int getNumPlayers() {
+        return numPlayers;
+    }
+
+    public int[] getSetupPhaseTurnOrder() {
+        return setupPhaseTurnOrder;
     }
 
     public void setSetupPhaseTurnCounter(int setupPhaseTurnCounter) {

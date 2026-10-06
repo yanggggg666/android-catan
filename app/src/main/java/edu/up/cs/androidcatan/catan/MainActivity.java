@@ -44,7 +44,7 @@ public class MainActivity extends GameMainActivity {
             }
         });
 
-        GameConfig defaultConfig = new GameConfig(playerTypes, 4, 4, "Settlers of Catan", PORT_NUMBER);
+        GameConfig defaultConfig = new GameConfig(playerTypes, 2, 4, "Settlers of Catan", PORT_NUMBER);
         defaultConfig.addPlayer("Human", 0); // player 1: a human player
         defaultConfig.addPlayer("Computer 1", 1); // player 2: a computer player
         defaultConfig.addPlayer("Computer 2", 1); // player 2: a computer player
@@ -55,7 +55,7 @@ public class MainActivity extends GameMainActivity {
     }
 
     @Override
-    public LocalGame createLocalGame() {
-        return new CatanLocalGame();
+    public LocalGame createLocalGame(int numPlayers) {
+        return new CatanLocalGame(numPlayers);
     }
 }

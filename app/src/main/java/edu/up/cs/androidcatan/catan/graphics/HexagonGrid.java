@@ -94,6 +94,16 @@ public class HexagonGrid extends BoardSurfaceView {
      * @param canvas Canvas to draw on.
      */
     public void drawGameBoard(Canvas canvas) {
+        int viewW = getWidth();
+        int viewH = getHeight();
+        if (viewW > 0 && viewH > 0) {
+            float s = Math.min((float) viewW / 2000f, (float) viewH / 1800f);
+            if (s > 0) {
+                // translate first so the logical drawing area is centered in the view
+                canvas.translate((viewW - 2000f * s) / 2f, (viewH - 1800f * s) / 2f);
+                canvas.scale(s, s);
+            }
+        }
         generateDrawableHexagons(x, y, size); // get hexes
 
         drawBorder(canvas);

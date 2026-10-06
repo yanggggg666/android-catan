@@ -49,8 +49,12 @@ public class CatanLocalGame extends LocalGame {
      * constructor for CatanLocalGame
      */
     public CatanLocalGame() {
+        this(4);
+    }
+
+    public CatanLocalGame(int numPlayers) {
         super();
-        state = new CatanGameState();
+        state = new CatanGameState(numPlayers);
     }
 
     /*--------------------------------------- Action Methods -------------------------------------------*/
@@ -134,9 +138,9 @@ public class CatanLocalGame extends LocalGame {
             // if it is still the setup phase
             if (this.state.isSetupPhase()) {
                 // increment setup phase turn counter
-                if (this.state.getSetupPhaseTurnCounter() < 7) {
+                if (this.state.getSetupPhaseTurnCounter() < this.state.getPlayerList().size() * 2 - 1) {
                     this.state.setSetupPhaseTurnCounter(this.state.getSetupPhaseTurnCounter() + 1);
-                    this.state.setCurrentPlayerId(CatanGameState.setupPhaseTurnOrder[state.getSetupPhaseTurnCounter()]);
+                    this.state.setCurrentPlayerId(state.getSetupPhaseTurnOrder()[state.getSetupPhaseTurnCounter()]);
                 } else {
                     // if it is the last turn of the setup phase
                     this.state.setCurrentPlayerId(this.state.getCurrentPlayerId());
@@ -205,7 +209,7 @@ public class CatanLocalGame extends LocalGame {
                 Log.i(TAG, "makeMove: Setup phase. Not checking for resources.");
                 // add settlement to the board
                 state.getBoard().addBuilding(((CatanBuildSettlementAction) action).getIntersectionId(), new Settlement(((CatanBuildSettlementAction) action).getOwnerId()));
-                if (state.getSetupPhaseTurnCounter() > 3) {
+                if (state.getSetupPhaseTurnCounter() > state.getPlayerList().size() - 1) {
                     ArrayList<Integer> adjacentHexagons = this.state.getBoard().getIntToHexIdMap().get(((CatanBuildSettlementAction) action).getIntersectionId());
                     for (Integer hexagon : adjacentHexagons) {
                         this.state.getCurrentPlayer().addResourceCard(state.getBoard().getHexagonFromId(hexagon).getResourceId(), 1);

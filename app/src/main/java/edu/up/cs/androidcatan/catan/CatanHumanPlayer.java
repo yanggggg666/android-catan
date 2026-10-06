@@ -1702,6 +1702,9 @@ public class CatanHumanPlayer extends GameHumanPlayer implements OnClickListener
             }
 
             updateTextViews();
+            if (!state.isRobberPhase() && state.getCurrentDiceSum() > 0) {
+                messageTextView.setText("本回合骰子： " + state.getCurrentDiceSum());
+            }
             drawGraphics();
 
         } else if (info instanceof NotYourTurnInfo) {
