@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">卡坦岛安卓版</string>
+
+    <string name="message_text">提醒！这是一条重要消息。</string>
+
+    <string name="hello_world">你好，世界！</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_game_main">来玩一把？</string>
+    <string name="save_config">保存为默认配置</string>
+    <string name="begin_game">开始游戏</string>
+    <string name="name_label">名称：</string>
+    <string name="server_ip_code">服务器IP：</string>
+    <string name="remove_player">移除玩家</string>
+    <string name="add_player">添加玩家</string>
+    <string name="player_name">玩家名称</string>
+    <string name="player_type">玩家类型</string>
+    <string name="guest">访客</string>
+    <string name="save_config_as_default">将此配置保存为默认</string><string name="start_the_game">开始游戏！</string>
+    <string name="robber_discard_menu_header">选择一半手牌弃掉</string>
+    <string name="confirm">确认</string>
+    <string name="select_more_resources">你需要选择更多资源</string>
+    <string name="score">分数</string>
+    <string name="vp00">VP: 00</string>
+    <string name="playerTurn">当前回合</string>
+    <string name="value_00">00</string>
+    <string name="buildDevelopment">建设发展卡</string>
+    <string name="selectIntersections">选择两个路口：</string>
+    <string name="resourceReceive">选择要获得的资源：</string>
+    <string name="resourceGive">选择要给出的资源：</string>
+    <string name="dice">骰子</string>
+    <string name="buildingCosts">建设费用</string>
+    <string name="longestRoad">最长路线</string>
+    <string name="largestArmy">最大军队</string>
+
+    <string name="select_intersection_id">选择路口A：</string>
+    <string name="hint_00">00</string>
+    <string name="minus">减</string>
+    <string name="add">加</string>
+
+    <string name="dialog_continue_label">继续游戏</string>
+    <string name="dialog_quit_label">退出</string>
+    <string name="dialog_quit_question">确定要退出吗？</string>
+    <string name="local_tab">本地游戏</string>
+    <string name="remote_tab">网络游戏</string>
+
+    <string name="heading_build">建造</string>
+    <string name="road">道路</string>
+    <string name="settlement">村庄</string>
+    <string name="city">城市</string>
+
+    <string name="heading_playerName">玩家名</string>
+    <string name="victoryPoints">胜利点</string>
+    <string name="roll">掷骰</string>
+    <string name="endTurn">结束回合</string>
+
+    <string name="heading_actions">操作</string>
+    <string name="heading_trade">交易</string>
+    <string name="trade">交易</string>
+
+    <string name="heading_resources">资源</string>
+    <string name="ore">矿石</string>
+    <string name="grain">麦子</string>
+    <string name="lumber">木材</string>
+    <string name="wool">羊毛</string>
+    <string name="brick">砖块</string>
+
+    <string name="heading_game">游戏</string>
+    <string name="scoreboard">计分板</string>
+    <string name="menu">菜单</string>
+    <string name="heading_turn">回合</string>
+    <string name="Player1">玩家 1</string>
+    <string name="Player2">玩家 2</string>
+    <string name="Player3">玩家 3</string>
+    <string name="Player4">玩家 4</string>
+
+    <string name="Player1_Score">0</string>
+    <string name="Player2_Score">0</string>
+    <string name="Player3_Score">0</string>
+    <string name="Player4_Score">0</string>
+
+    <string name="Trading_Menu">交易菜单</string>
+    <string name="you_Want">你想要：</string>
+    <string name="you_Give">你给出：</string>
+
+    <string name="sheep_you_give_amount">0</string>
+    <string name="sheep_you_want_amount">2</string>
+    <string name="wood_you_give_amount">1</string>
+    <string name="wood_you_want_amount">2</string>
+    <string name="ore_you_give_amount">1</string>
+    <string name="ore_you_want_amount">1</string>
+    <string name="grain_you_give_amount">0</string>
+    <string name="grain_you_want_amount">0</string>
+    <string name="brick_you_give_amount">1</string>
+    <string name="brick_you_want_amount">0</string>
+
+    <string name="Use_Button">使用卡牌</string>
+
+    <string name="development_Card_Info">发展卡信息</string>
+    <string name="development_Card_Name">发展卡名称</string>
+    <string name="development_Card_Spinner">选择发展卡</string>
+
+    <string name="value_lumber">0</string>
+    <string name="value_wool">0</string>
+    <string name="value_brick">0</string>
+    <string name="value_grain">0</string>
+    <string name="value_ore">0</string>
+
+    <string name="confirmString">确定在这里建造吗？</string>
+
+    <string name="knight_name">骑士</string>
+    <string name="road_building_name">修路</string>
+    <string name="year_of_plenty_name">豐年</string>
+    <string name="monopoly_name">垄断</string>
+    <string name="victory_point_name">胜利点卡</string>
+
+    <string name="knight_info">允许玩家移动强盗</string>
+    <string name="road_building_info">玩家可像刚建造一样免费铺设2条道路</string>
+    <string name="year_of_plenty_info">玩家可从银行任选2张资源卡</string>
+    <string name="monopoly_info">玩家可夺取指定类型的所有资源卡</string>
+    <string name="victory_point_info">计入拥有者胜利点总数，不需要打出即可赢得胜利</string>
+    <!--resources-->
+
+    <string name="developmentCards">发展</string>
+    <string name="need_2_ints_for_road">选择两个路口来修路。</string>
+    <string name="build_a_road">已修路。</string>
+    <string name="invalid_road_placement">道路放置不合法。</string>
+    <string name="one_int_for_set">选择一个路口来建村庄。</string>
+    <string name="built_settlement">已建村庄。</string>
+    <string name="invalid_set_loc">村庄位置不合法。</string>
+    <string name="select_one_int_for_city">选择一个路口来建城市。</string>
+    <string name="built_city">已建城市。</string>
+    <string name="not_enough_for_dev">资源不足，无法建设发展卡。</string>
+    <string name="not_enough_for_road">资源不足，无法修路。</string>
+    <string name="robber_phase">强盗阶段。</string>
+    <string name="setup_phase">布置阶段。</string>
+    <string name="setup_phase_complete">布置回合完成，请结束回合。</string>
+    <string name="not_enough_for_city">资源不足，无法建城市。</string>
+    <string name="no_port_access">所选路口没有港口通道。</string>
+    <string name="select_one_intersection">请只选择一个路口。</string>
+    <string name="select_int_w_bldg_robber">请选择其他玩家的建筑。</string>
+    <string name="select_int_not_owned_by_you">请选择不属于你的路口。</string>
+    <string name="select_adjacent_to_robber">请选择与强盗格相邻的路口。</string>
+    <string name="invalid_tile">不是有效地块！</string>
+    <string name="zero">00</string>
+    <string name="dont_have_card">你没有那张牌！</string>
+    <string name="you_built_a_dev">发展卡已建。</string>
+    <string name="not_enough_for_dev_card">资源不足，无法建设发展卡。</string>
+    <string name="invalid_settlement_loc">村庄位置不合法。</string>
+    <string name="roll_the_dice">请掷骰子。</string>
+    <string name="action_phase">行动阶段。</string>
+    <string name="choose_robber_tile">请选择要放置强盗的地块。</string>
+    <string name="road_built">修路成功！</string>
+    <string name="robber_moved">强盗已移动。</string>
+    <string name="new_hex">强盗必须移动到新的六边形。</string>
+    <string name="hex_for_robber">选择路口来移动强盗。</string>
+    <string name="opp_bldg">强盗必须移动到对手建筑旁。</string>
+    <string name="not_enough_for_trade">资源不足，无法交易。</string>
+    <string name="traded_with_port">已与港口交易。</string>
+    <string name="rec_res_not_sel">未选择要获得的资源！</string>
+    <string name="give_res_not_sel">未选择要给出的资源！</string>
+    <string name="unique_res_trading">获得的资源必须和给出的不同。</string>
+    <string name="pick_resource">请选择资源！</string>
+    <string name="build_road_and_set">必须建造一条道路和一个村庄！</string>
+    <string name="cannot_end_turn_before_rolling">掷骰前不能结束回合！</string>
+    <string name="less_than_2_res">请选择少于2个路口。</string>
+    <string name="invalid_city_loc">城市位置不合法：请选择要升级的村庄。</string>
+    <string name="select_half">请选择一半资源弃掉。</string>
+    <string name="move_robber_to_hex">请点选移动强盗到该格（必须与敌方建筑相邻）。</string>
+    <string name="robber_select_intersection_tosteal">点选有敌方村庄/城市的路口来抢夺。</string>
+    <string name="waiting_for_discard">等待其他玩家弃牌……</string>
+    <string name="cpu_move_robber_to_hex">当前玩家正在移动强盗。</string>
+    <string name="cpu_robber_steal_phase">当前玩家正在选择偷谁。</string>
+    <string name="select_n_cards_to_discard">选择 %d 张牌弃掉。</string>
+    <string name="port_access">请选择有港口通道的建筑。</string>
+    <string name="no_resources">该玩家没有资源！抱歉！</string>
+    <string-array name="dev_Card">
+        <item>骑士</item>
+        <item>胜利点</item>
+        <item>丰年</item>
+        <item>垄断</item>
+        <item>修路</item>
+    </string-array>
+</resources>
