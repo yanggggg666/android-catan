@@ -5,6 +5,10 @@
     android:layout_marginLeft="@dimen/config_horiz_margin"
     android:fillViewport="true" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
     <TableLayout
         android:id="@+id/configTableLayout"
@@ -62,5 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_player" />
+
+    </LinearLayout>
 
 </ScrollView>
